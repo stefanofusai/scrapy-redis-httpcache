@@ -19,7 +19,7 @@ HTTPCACHE_REDIS_DB = ... # optional, defaults to 0
 HTTPCACHE_REDIS_HOST = ... # optional, defaults to "localhost"
 HTTPCACHE_REDIS_PASSWORD = ... # optional, defaults to None
 HTTPCACHE_REDIS_PORT = ... # optional, defaults to 6379
-HTTPCACHE_STORAGE = "scrapy_redis_httpcache.httpcache.RedisCacheStorage"
+HTTPCACHE_STORAGE = "scrapy_redis_httpcache.RedisCacheStorage"
 ```
 
 ## Contributing
