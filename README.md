@@ -13,6 +13,10 @@ pip install scrapy-redis-httpcache
 Add the following settings to your Scrapy project settings file:
 
 ```python
+DOWNLOADER_MIDDLEWARES = {
+    "scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware": 100,
+    ...
+}
 HTTPCACHE_ENABLED = True
 HTTPCACHE_EXPIRATION_SECS = ... # optional, defaults to 3600
 HTTPCACHE_REDIS_DB = ... # optional, defaults to 0
