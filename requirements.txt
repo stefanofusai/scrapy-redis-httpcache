@@ -99,16 +99,12 @@ requests==2.32.3
     #   tldextract
 requests-file==2.1.0
     # via tldextract
-ruff==0.5.1
+ruff==0.5.5
     # via -r requirements.in
 scrapy==2.11.2
     # via -r requirements.in
 service-identity==24.1.0
     # via scrapy
-setuptools==71.1.0
-    # via
-    #   scrapy
-    #   zope-interface
 six==1.16.0
     # via automat
 tldextract==5.1.2
