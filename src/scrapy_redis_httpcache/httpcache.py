@@ -22,6 +22,7 @@ class RedisCacheStorage:
             port=settings.getint("HTTPCACHE_REDIS_PORT", 6379),
             db=settings.getint("HTTPCACHE_REDIS_DB", 0),
             password=settings.get("HTTPCACHE_REDIS_PASSWORD", None),
+            username=settings.get("HTTPCACHE_REDIS_USERNAME", None),
         )
 
     def close_spider(self, spider: Spider) -> None:
