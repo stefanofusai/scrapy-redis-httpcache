@@ -1,6 +1,6 @@
 # scrapy-redis-httpcache
 
-A simple package to cache Scrapy responses in Redis.
+Cache Scrapy responses with Redis.
 
 ## Installation
 
