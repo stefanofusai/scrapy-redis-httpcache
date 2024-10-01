@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scrapy-redis-httpcache"
-version = "1.1.0"
+version = "1.1.1"
 authors = [{ "name" = "Stefano Fusai", "email" = "stefanofusai@gmail.com" }]
 description = "Cache Scrapy responses with Redis."
 readme = "README.md"
