@@ -11,7 +11,8 @@ class RedisCacheStorage:
     """A scrapy response storage that caches responses in Redis."""
 
     def __init__(self, settings: Settings) -> None:
-        """Construct an instance of the InfluxDBStatsCollector class.
+        """
+        Construct an instance of the InfluxDBStatsCollector class.
 
         :param settings: The Scrapy settings.
         :type settings: Settings
@@ -26,21 +27,24 @@ class RedisCacheStorage:
         )
 
     def close_spider(self, spider: Spider) -> None:
-        """Close the spider.
+        """
+        Close the spider.
 
         :param spider: The spider instance to close.
         :type spider: Spider
         """
 
     def open_spider(self, spider: Spider) -> None:
-        """Open the spider.
+        """
+        Open the spider.
 
         :param spider: The spider instance to open.
         :type spider: Spider
         """
 
     def retrieve_response(self, spider: Spider, request: Request) -> Response | None:
-        """Retrieve a response from the cache.
+        """
+        Retrieve a response from the cache.
 
         :param spider: The spider instance to retrieve the response for.
         :type spider: Spider
@@ -66,7 +70,8 @@ class RedisCacheStorage:
     def store_response(
         self, spider: Spider, request: Request, response: Response
     ) -> None:
-        """Store a response in the cache.
+        """
+        Store a response in the cache.
 
         :param spider: The spider instance to store the response for.
         :type spider: Spider
