@@ -90,7 +90,7 @@ pyyaml==6.0.2
     # via pre-commit
 queuelib==1.7.0
     # via scrapy
-redis==5.1.0
+redis==5.1.1
     # via -r requirements.in
 requests==2.32.3
     # via
@@ -104,11 +104,6 @@ scrapy==2.11.2
     # via -r requirements.in
 service-identity==24.1.0
     # via scrapy
-setuptools==75.1.0
-    # via
-    #   incremental
-    #   scrapy
-    #   zope-interface
 tldextract==5.1.2
     # via scrapy
 twisted==24.7.0
