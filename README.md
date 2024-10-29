@@ -27,6 +27,12 @@ HTTPCACHE_REDIS_USERNAME = ... # optional, defaults to None
 HTTPCACHE_STORAGE = "scrapy_redis_httpcache.RedisCacheStorage"
 ```
 
+## Development
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Contributing
 
 Contributions are welcome! To get started, please refer to our [contribution guidelines](https://github.com/stefanofusai/scrapy-influxdb-exporter/blob/main/CONTRIBUTING.md).
