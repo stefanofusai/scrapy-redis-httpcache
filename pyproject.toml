@@ -1,6 +1,6 @@
 [project]
 name = "scrapy-redis-httpcache"
-version = "1.2.0"
+version = "1.2.1"
 description = "Cache Scrapy responses with Redis."
 readme = "README.md"
 authors = [
@@ -25,12 +25,14 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 development = [
+    "mypy==1.13.0",
     "pre-commit==4.0.1",
     "ruff==0.8.2",
+    "types-redis==4.6.0.20241004",
 ]
 
 [tool.mypy]
-python_version = "3.12"
+ignore_missing_imports = true
 strict = true
 
 [tool.ruff.lint]

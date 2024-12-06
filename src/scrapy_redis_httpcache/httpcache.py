@@ -2,7 +2,7 @@ import pickle
 
 import redis
 from scrapy import Request, Spider
-from scrapy.http import Headers, Response
+from scrapy.http import Headers, Response  # type: ignore[attr-defined]
 from scrapy.responsetypes import responsetypes
 from scrapy.settings import Settings
 
@@ -53,7 +53,7 @@ class RedisCacheStorage:
         :return: The response from the cache, or None if not found.
         :rtype: Response | None
         """
-        key = spider.crawler.request_fingerprinter.fingerprint(request).hex()
+        key = spider.crawler.request_fingerprinter.fingerprint(request).hex()  # type: ignore[union-attr]
         _data = self._redis.get(key)
 
         if _data is None:
@@ -80,7 +80,7 @@ class RedisCacheStorage:
         :param response: The response to store.
         :type response: Response
         """
-        key = spider.crawler.request_fingerprinter.fingerprint(request).hex()
+        key = spider.crawler.request_fingerprinter.fingerprint(request).hex()  # type: ignore[union-attr]
         data = pickle.dumps(
             {
                 "url": response.url,
