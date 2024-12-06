@@ -32,7 +32,7 @@ HTTPCACHE_STORAGE = "scrapy_redis_httpcache.RedisCacheStorage"
 ## Development
 
 ```bash
-uv sync
+uv sync --group=development
 uv run pre-commit install --install-hooks
 uv run pre-commit install --hook-type=commit-msg
 ```
