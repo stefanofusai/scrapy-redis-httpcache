@@ -1,6 +1,6 @@
 [project]
 name = "scrapy-redis-httpcache"
-version = "1.2.0"
+version = "1.3.0"
 description = "Cache Scrapy responses with Redis."
 readme = "README.md"
 authors = [
@@ -11,8 +11,8 @@ maintainers = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "redis==5.2.1",
-    "scrapy==2.12.0",
+    "redis>=5.0.0,<6.0.0",
+    "scrapy>=2.10.0,<3.0.0",
 ]
 
 [project.urls]
