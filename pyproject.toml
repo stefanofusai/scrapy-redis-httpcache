@@ -1,6 +1,6 @@
 [project]
 name = "scrapy-redis-httpcache"
-version = "1.3.0"
+version = "1.4.0"
 description = "Cache Scrapy responses with Redis."
 readme = "README.md"
 authors = [
